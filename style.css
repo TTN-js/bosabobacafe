@@ -71,7 +71,7 @@ body{
 }
 
 #about{
-	height: 65vh;
+	height: 67vh;
 	font-family: arial;
 	color: #D9D6CF;
 	text-align: justify;
@@ -93,12 +93,17 @@ body{
 	margin-bottom: 5px;
 }
 
+.fa-calendar{
+	margin-left: 5px;
+}
+
 .date{
 	margin-left: 5px;
 	font-size: 12px;
 }
 
 .post_summary{
+	margin-left: 5px;
 	margin-top: 15px;
 	font-size: 18px;
 }
