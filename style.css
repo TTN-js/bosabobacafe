@@ -4,16 +4,11 @@ a{
 	color: #D9D6CF;
 }
 
-
-a:hover{
+ a:hover{
 	color: #B7B8B3; 
 }
 
 body{
-	background-color: #63676A;
-}
-
-#indexBody{
 	height: 201vh;
 	background-color: #AF6FC1;
 }
@@ -27,20 +22,30 @@ body{
    	transform: scale(1.1); 
 }
 
-
 #bbclogo{
 	float: right;
-	margin-top: 165px;
+	margin-top: 170px;
 	margin-right: 62px;
 	width: 33%;
 	height: 70%; 
+	display: none;
+}
+
+#bbclogomini{
+	float: left; 
+	margin-top: 525px;
+	margin-left: 80px;
+	width: 12%;
+	height: 28%;
+	display: none;
 }
 
 #nav{
 	background-color: #63676A;
 	opacity: 0.98;
 	width: 95.8%;
-	height: 70px;
+	height: 65px;
+	margin-top: 20px;
 	transform: scale(1.1);
 }
 
@@ -48,15 +53,21 @@ body{
 	font-family: din-condensed, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	margin-left: -30px;
 }
 
 #mainNav li{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 25px;
-	margin-top: 8.6px;
-	margin-left: 8.5%;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 12%;
+	text-decoration: none;
+	outline: 0;
+	color: #D9D6CF;
+}
+
+#mainNav li:hover{
+	color: #B7B8B3; 
 }
 
 .selected{
@@ -79,7 +90,13 @@ body{
 	font-size: 25px;
 }
 
-#press{
+#map {
+    height: 300px;
+    width: 30%;
+}
+
+
+/* #press{
 	font-family: arial;
 	color: #D9D6CF;
 	text-align: left;
@@ -88,9 +105,18 @@ body{
 	padding-top: 5px;
 }
 
+#location{
+
+}
+
 #press h1{
-	color: #908C81;
+	color: #D9D6CF;
 	margin-bottom: 5px;
+}
+
+article{
+	background-color: #908C81;
+	padding: ;
 }
 
 .fa-calendar{
@@ -106,7 +132,7 @@ body{
 	margin-left: 5px;
 	margin-top: 15px;
 	font-size: 18px;
-}
+} */
 
 footer {
 	width: 95%;	
