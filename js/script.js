@@ -1,38 +1,71 @@
 // jQuery check
 console.log($);
 
-var logoMargin = $("#bbclogo").css("marginRight");
-
-console.log(logoMargin);
-
+// start
 $(document).ready(function(){
-  $('#bbclogo').fadeIn(4000);
+  $('#bbclogo').fadeIn(3500);
 });
 
+// reset animation
+var reset = function(){
+	var logoMargin = $("#bbclogo").css("marginRight");
+
+	if(logoMargin === "62px" && $("#bbclogo").is(':visible')){
+
+		return;
+
+	} else {
+
+		if($('#bbclogomini').is(':visible')){
+			$('#bbclogomini').fadeOut();
+		}
+
+		$('#bbclogo').fadeOut();
+
+		$('#bbclogo')
+		  .delay(800)
+		  .queue(function (next) { 
+		    $(this).css({"margin-right": ""}); 
+		    next(); 
+		});
+
+		$('#bbclogo').fadeIn();
+	}
+}
+
+// active nav check
+$("li").click(function() {
+	$("li").addClass("disabled");
+    $(this).siblings().removeClass("selected");
+    $(this).addClass("selected");
+
+    setTimeout(function() {
+           $("li").removeClass("disabled");
+       }, 3000);
+});
+
+// toggles
 $('#home-toggle').click(function(){
+	reset();
     $("html, body").animate({scrollTop:$('#about').offset().top}, 2000);
+  
 });
 
 $('#menu-toggle').click(function(){
-	$('#bbclogo').fadeOut(4000);
-	$('#bbclogomini').fadeIn(4000);	
+	$('#bbclogo').fadeOut();
+	$('#bbclogomini').delay(1000).fadeIn(2000);
 });
 
-
 $('#gallery-toggle').click(function(){
-	if (logoMargin === "62px") {
-		console.log('hi');
-		$('#bbclogo').animate({"margin-right": '+=750'}, 2000);		
-	}
-	else if(logoMargin === "812px") {
-		console.log('bye');
-		$('#bbclogo').animate({"margin-right": '-=750'}, 2000);
-	}
+	reset();
+	$('#bbclogo').animate({"margin-right": '+=750'}, 2000);	
 });
 
 $('#press-toggle').click(function(){
-	$('#bbclogo').animate({"margin-right": '+=600'}, 2000);		
+	reset();
+	$('#bbclogo').animate({"margin-right": '+=600'}, 2000);	
 });
+
 
 // google maps callback
 function initMap() {

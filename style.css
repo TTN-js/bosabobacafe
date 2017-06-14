@@ -64,6 +64,7 @@ body{
 	text-decoration: none;
 	outline: 0;
 	color: #D9D6CF;
+	cursor: pointer;
 }
 
 #mainNav li:hover{
@@ -71,8 +72,14 @@ body{
 }
 
 .selected{
-	color: #B7B8B3;
+	color: #B7B8B3 !important;
 	border-bottom: 3px solid #B7B8B3;
+	pointer-events:none;
+}
+
+.disabled{
+	cursor: pointer;
+	pointer-events:none;
 }
 
 .bar{
