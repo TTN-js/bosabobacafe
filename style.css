@@ -1,0 +1,132 @@
+a{
+	text-decoration: none;
+	outline: 0;
+	color: #D9D6CF;
+}
+
+
+a:hover{
+	color: #B7B8B3; 
+}
+
+body{
+	background-color: #63676A;
+}
+
+#indexBody{
+	height: 201vh;
+	background-color: #AF6FC1;
+}
+
+#heroImg{
+	margin-top: -100px;
+    height: 800px;
+    width: 95.8%;
+    background: url('images/hero2.png');
+    background-size: cover;
+   	transform: scale(1.1); 
+}
+
+
+#bbclogo{
+	float: right;
+	margin-top: 165px;
+	margin-right: 62px;
+	width: 33%;
+	height: 70%; 
+}
+
+#nav{
+	background-color: #63676A;
+	opacity: 0.98;
+	width: 95.8%;
+	height: 70px;
+	transform: scale(1.1);
+}
+
+#mainNav{
+	font-family: din-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-left: -30px;
+}
+
+#mainNav li{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 25px;
+	margin-top: 8.6px;
+	margin-left: 8.5%;
+}
+
+.selected{
+	color: #B7B8B3;
+	border-bottom: 3px solid #B7B8B3;
+}
+
+.bar{
+	background-color: #908C81;
+	height: 2px;
+	margin-bottom: 10px;
+}
+
+#about{
+	height: 65vh;
+	font-family: arial;
+	color: #D9D6CF;
+	text-align: justify;
+	padding: 50px;
+	font-size: 25px;
+}
+
+#press{
+	font-family: arial;
+	color: #D9D6CF;
+	text-align: left;
+	height: 68vh;
+	padding: 75px;
+	padding-top: 5px;
+}
+
+#press h1{
+	color: #908C81;
+	margin-bottom: 5px;
+}
+
+.date{
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.post_summary{
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+footer {
+	width: 95%;	
+	margin: 0 auto;
+	margin-top: 15px;
+	border-top: 3px solid #CDC3B7; 
+}
+
+#copyright{
+	float: left;
+	font-family: arial;
+	font-size: 14px;
+	color: #CDC3B7;
+	padding-top: 25px;
+	margin-left: 18px;
+}
+
+#socialBar{
+	float: right;
+ 	margin-top: 20px;
+ 	margin-right: -15px;
+}
+
+.social{
+	height: 30px;
+	width: 30px;
+	margin-right: 40px; 
+}
