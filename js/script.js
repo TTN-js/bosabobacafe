@@ -53,7 +53,7 @@ $('#home-toggle').click(function(){
 
 $('#menu-toggle').click(function(){
 	$('#bbclogo').fadeOut();
-	$('#bbclogomini').delay(1000).fadeIn(2000);
+	$('#bbclogomini').delay(1000).fadeIn(2500);
 });
 
 $('#gallery-toggle').click(function(){
