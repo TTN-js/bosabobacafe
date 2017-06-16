@@ -12,15 +12,25 @@ body{
 	box-sizing: border-box;
 	margin: auto 0;
 	background-color: #AF6FC1;
+	padding-top: 680px;
 }
 
 #heroImg{
 	position: fixed;
+	top:0;
 	margin-top: -100px;
     height: 800px;
     width: 100%;
     background: url('images/hero.png');
     background-size: cover;
+}
+
+#menuframe{
+	height: 75%;
+    width: 78%;
+    display: none;
+    margin-top: 150px;
+	margin-left: 30px;
 }
 
 /* logos */
@@ -42,27 +52,31 @@ body{
 	display: none;
 }
 
+#bbclogoabout{
+	width: 100%;
+}
+
 /* navbar */
 #nav{
 	position: relative; 
 	z-index: 150;
 	background-color: #63676A;
 	width: 100%;
-	height: 65px;
+	height: 70px;
 	margin-top: 20px;
+	box-shadow: 0 2px 3px #D9D6CF;
 }
 
 #mainNav{
-	font-family: din-condensed, sans-serif;
-	font-style: normal;
-	font-weight: 400;
+	font-family: 'Dosis', sans-serif;
+	font-size: 23px;
+	margin-top: 0px;
 }
 
 #mainNav li{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 20px;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-left: 12%;
 	text-decoration: none;
 	outline: 0;
@@ -72,6 +86,12 @@ body{
 
 #mainNav li:hover{
 	color: #B7B8B3; 
+}
+
+.navScrolled{
+	position: fixed !important;
+	top: 0;
+	margin-top: 0 !important; 
 }
 
 /* classes */
@@ -89,29 +109,66 @@ body{
 /* about */
 #about{
 	position: relative;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
 	color: #D9D6CF;
-	text-align: justify;
 	padding: 50px;
-	font-size: 25px;
 	background-color: #AF6FC1;
-	/* width: 100%; */
+	height: 580px;
 }
 
-/* google maps */
-#map {
-    height: 300px;
-    width: 30%;
-    margin-bottom: 25px; 
+#about p{
+	width: 100%;
+	text-align: justify;
+	font-size: 20px;
+	margin-top: 0px;
 }
+
+.info{
+	display: inline-block;
+	vertical-align:top;
+	width: 30%;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+
+#hplbox{
+	width: 100%;
+	padding-left: 30px;
+}
+
+.hpl{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+	width: 40%;
+}
+
+.hpl h2{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: initial;
+}
+
+.hpl p{
+	margin-bottom: 0px; 
+}
+
 
 /* social media */
 #socialBar{
-	margin-bottom: 25px; 
+	text-align: left;
+	width: 80%;
+	margin: auto 0;
+}
+
+#socialBar h3{
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 .social{
-	/* margin-right: 20px;  */
+	margin-right: 10px; 
 }
 
 /* footer */
@@ -122,9 +179,10 @@ footer {
 }
 
 #copyright{
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	color: #CDC3B7;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 5px;
+	padding-bottom: 5px;
 }

@@ -33,6 +33,29 @@ var reset = function(){
 	}
 }
 
+// reset on refresh
+// $(window).on('beforeunload', function() {
+//     $(window).scrollTop(0);
+// });
+
+// sticky nav
+var nav = $("#nav");
+    scrolleNav = "navScrolled";
+    heroImg = $('#heroImg').height() - 95; 
+
+    console.log(heroImg);
+
+$(window).scroll(function() {
+  if($(this).scrollTop() > heroImg) {
+    nav.addClass(scrolleNav);
+    $("#about").css({"margin-top": "80px"});
+  } else {
+    nav.removeClass(scrolleNav);
+    $("#about").css({"margin-top": ""});
+  }
+});
+
+
 // active nav check
 $("li").click(function() {
 	$("li").addClass("disabled");
@@ -47,38 +70,24 @@ $("li").click(function() {
 // toggles
 $('#home-toggle').click(function(){
 	reset();
-    $("html, body").animate({scrollTop:$('#about').offset().top}, 2000);
+    $("html, body").animate({scrollTop:$('#about').offset().top - 40}, 2000);
   
 });
 
 $('#menu-toggle').click(function(){
 	$('#bbclogo').fadeOut();
 	$('#bbclogomini').delay(1000).fadeIn(2500);
+	$('#menuframe').fadeIn();
 });
 
 $('#gallery-toggle').click(function(){
 	reset();
-	$('#bbclogo').animate({"margin-right": '+=750'}, 2000);	
+	$('#bbclogo').animate({"margin-right": '+=850'}, 2000);	
 });
 
 $('#press-toggle').click(function(){
 	reset();
-	$('#bbclogo').animate({"margin-right": '+=600'}, 2000);	
+	$('#bbclogo').animate({"margin-right": '+=700'}, 2000);	
 });
 
-
-// google maps callback
-function initMap() {
-	var uluru = {lat: 36.126054, lng: -115.184570};
-
-	var map = new google.maps.Map(document.getElementById('map'), {
-	  zoom: 14,
-	  center: uluru
-	});
-
-	var marker = new google.maps.Marker({
-	  position: uluru,
-	  map: map
-	});
-}
     

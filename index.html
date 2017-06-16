@@ -6,23 +6,31 @@
 	<title>Bosa Boba Cafe</title>
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:700|Open+Sans:300" rel="stylesheet"> 
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css"/>
 	<link type="text/css" href="style.css" rel="stylesheet"/>    
 
 	<link rel="icon" type="image/png" href="images/bbcpanda.png">
+
 </head>
 <body>
 
 	<div id="heroImg">
 		<img src="images/bbclogo.png" alt="bbclogo" id="bbclogo">
 
-		<img src="images/bbclogo.png" alt="bbclogo" id="bbclogomini">
+		<!-- menu -->
+		<img src="images/bbclogo.png" alt="bbclogomini" id="bbclogomini">
+		<!-- <img src="images/menuframe.png" id="menuframe"> -->
+
+		<!-- instagram feed -->
+
+		<!-- press -->
 	</div>
 
 	<nav id="nav">
 		<ul id="mainNav">
-			<li id="home-toggle">HOME</li>
+			<li id="home-toggle" class="selected disabled">HOME</li>
 			<li id="menu-toggle">MENU</li>
 			<li id="gallery-toggle">GALLERY</li>
 			<li id="press-toggle">PRESS</li>
@@ -31,24 +39,46 @@
 	</nav>
 
 	<div id="about">
-		<img src="images/bbclogo.png" alt="bbclogo" id="bbclogomini">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum vel sem quis eleifend. Ut gravida massa non euismod mollis. Fusce suscipit quam eu dolor gravida, id dictum nisl porta. Cras at metus vehicula, tempus enim rhoncus, interdum ipsum. Fusce egestas dictum ex et pharetra. Sed at sapien malesuada, sagittis sapien lacinia, viverra tortor. Donec imperdiet porta neque, a egestas leo interdum vitae. Aliquam porttitor eu purus nec molestie. Nam sed pharetra purus, id eleifend eros. Fusce facilisis risus nisi, vitae tincidunt sapien viverra at. Etiam porttitor orci gravida bibendum condimentum. Donec porta rhoncus justo eget fermentum. Mauris pellentesque ligula justo, sed facilisis urna molestie id. Aliquam leo dolor, sagittis at porttitor vitae, vestibulum a eros.
-			<br><br>
-			Praesent sollicitudin lacus eget tortor tincidunt, vel efficitur augue efficitur. Nam metus odio, accumsan nec augue eu, vulputate malesuada nulla. Donec pellentesque sollicitudin justo, et ultrices metus tincidunt et. Curabitur tincidunt varius dolor, et aliquet velit ultricies vitae. Nam eu mi metus. Phasellus sed odio sagittis, vehicula lorem sed, lacinia mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non facilisis magna. Nam vitae leo eget nisi vehicula malesuada. Nulla interdum non nunc id molestie. In vitae erat ut ipsum blandit maximus. Donec facilisis nulla dui, eget dictum nisi iaculis ac.  
-		</p>
-	</div>
+		<div class="info">
+			<img src="images/bbclogo.png" alt="bbclogo" id="bbclogoabout">
+		</div>
+		
+		<div class="info">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum vel sem quis eleifend. Ut gravida massa non euismod mollis. Fusce suscipit quam eu dolor gravida, id dictum nisl porta. Cras at metus vehicula, tempus enim rhoncus, interdum ipsum. Fusce egestas dictum ex et pharetra. Sed at sapien malesuada, sagittis sapien lacinia, viverra tortor. Donec imperdiet porta neque, a egestas leo interdum vitae. Aliquam porttitor eu purus nec molestie. Nam sed pharetra purus, id eleifend eros.
+			</p>
+		</div>
 
-	<div id="info">
-		<div id="map"></div>
-	</div>
+		<div class="info">
+			<div id="hplbox">
+				<div class="hpl">
+					<h2><i class="fa fa-clock-o" aria-hidden="true" style="margin-right: 3px;"></i>HOURS</h2> <br>
+					Sunday  <p>CLOSED</p> <br>
+					Monday  <p>CLOSED</p> <br>
+					Tuesday	 <p>11AM–7PM</p> <br>
+					Wednesday <p>11AM–7PM</p> <br>
+					Thursday  <p>11AM–7PM</p> <br>
+					Friday	 <p>11AM–2AM</p> <br>
+					Saturday  <p>11AM–2AM</p>
+				</div>
+				<div class="hpl">
+					<a href="tel:7022342391" ><i class="fa fa-phone fa-lg" aria-hidden="true"></i><p>702.234.2391</p></a> <br>
+					<a href="http://maps.google.com/?q= 3355 Spring Mountain Rd Suite 35 Las Vegas, NV 89102"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i><p style="font-size: 14px; margin-top: 5px;">3355 Spring Mountain Rd Suite 35 <br> Las Vegas, NV 89102</p></a>
 
-	<div id="socialBar">
-		<a href="https://www.facebook.com/bosabobacafe/" target="new" ><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
-		<a href="https://www.yelp.com/biz/bosa-boba-cafe-las-vegas" target="new" ><i class="fa fa-yelp fa-2x social" aria-hidden="true"></i></a>
-		<a href="https://www.instagram.com/bbc_lasvegas/" target="new" ><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
-	</div>
+					<div id="socialBar">
+						<h3>Follow Us</h3>
+						<a href="https://www.facebook.com/bosabobacafe/" target="new" ><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
+						<a href="https://www.yelp.com/biz/bosa-boba-cafe-las-vegas" target="new" ><i class="fa fa-yelp fa-2x social" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/bbc_lasvegas/" target="new" ><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
 
+			
+		</div>
+
+	</div>
+	
 	<footer>
 		<div id="copyright">
 			Bosa Boba Cafe <br> 3355 Spring Mountain Rd Suite 35 <br> Las Vegas, NV 89102 <br> © 2017 B.B.C.
@@ -58,11 +88,7 @@
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- google maps -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH-CCpC9i5zB-dATLSwHGGtOFxRSPIryk&callback=initMap">
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
     <!-- js -->		
 	<script type="text/javascript" src="js/script.js"></script>
 
