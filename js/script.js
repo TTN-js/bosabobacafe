@@ -20,7 +20,17 @@ var reset = function(){
 			$('#bbclogomini').fadeOut();
 		}
 
-		$('#bbclogo').fadeOut();
+		if($('#bosaPress').is(':visible')){
+			$('#bosaPress').fadeOut(1000);
+				$('#bosaPress')
+				  .queue(function (next) { 
+				    $(bosaPress).css({"margin-right": ""}); 
+				    next(); 
+			});
+			$('#bosaPress').fadeIn();
+		}
+
+		$('#bbclogo').fadeOut(1000);
 
 		$('#bbclogo')
 		  .delay(800)
@@ -75,19 +85,34 @@ $('#home-toggle').click(function(){
 });
 
 $('#menu-toggle').click(function(){
-	$('#bbclogo').fadeOut();
+		$('#bbclogo').fadeOut(1000);
+		if($('#bosaPress').is(':visible')){
+			$('#bosaPress').fadeOut(1000);
+			$('#bosaPress')
+			  .queue(function (next) { 
+			    $(bosaPress).css({"margin-right": ""}); 
+			    next(); 
+		});
+		$('#bosaPress').fadeIn();
+	}
 	$('#bbclogomini').delay(1000).fadeIn(2500);
-	$('#menuframe').fadeIn();
 });
 
 $('#gallery-toggle').click(function(){
 	reset();
+
+
+
 	$('#bbclogo').animate({"margin-right": '+=850'}, 2000);	
 });
 
 $('#press-toggle').click(function(){
 	reset();
-	$('#bbclogo').animate({"margin-right": '+=700'}, 2000);	
+	$('#bbclogo').animate({"margin-right": '+=50'}, 1200, function(){
+		$("#bosaPress").animate({"margin-right": '+=700'}, 1300);
+	});	
 });
+
+
 
     
