@@ -95,7 +95,11 @@ $('#menu-toggle').click(function(){
 		});
 		$('#bosaPress').fadeIn();
 	}
-	$('#bbclogomini').delay(1000).fadeIn(2500);
+	$('#bbclogomini').delay(1000).fadeIn(1000, function(){
+		$('.togglemenu').fadeIn(1000, function(){
+			$('#drinkmenu').fadeIn(2000);
+		});
+	});
 });
 
 $('#gallery-toggle').click(function(){
