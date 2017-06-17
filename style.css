@@ -27,10 +27,18 @@ body{
 }
 
 #drinkmenu{
-	height: 75%;
+	height: 78%;
     width: 75%;
     display: none;
-    margin-top: 150px;
+    margin-top: 130px;
+	margin-left: 50px;
+}
+
+#munchiesmenu{
+	height: 78%;
+    width: 75%;
+    display: none;
+    margin-top: 130px;
 	margin-left: 50px;
 }
 
