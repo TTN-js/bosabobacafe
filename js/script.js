@@ -3,7 +3,7 @@ console.log($);
 
 // start
 $(document).ready(function(){
-  $('#bbclogo').fadeIn(3500);
+  $('#bbclogo').fadeIn(3000);
 });
 
 // reset animation
@@ -15,6 +15,20 @@ var reset = function(){
 		return;
 
 	} else {
+
+		if($(".togglemenu").is(":visible")){
+			$(".togglemenu").fadeOut(function(){
+				if($("#drinkmenu").is(":visible")){
+					$("#drinkmenu").fadeOut();
+				} else {
+					if($("#munchiesmenu").is(":visible")){
+					$("#munchiesmenu").fadeOut();
+					$("#munchiesbutton").removeClass("offbutton");
+					$("#drinkbutton").addClass("offbutton");
+				}
+				}
+			});
+		}
 
 		if($('#bbclogomini').is(':visible')){
 			$('#bbclogomini').fadeOut();
@@ -95,18 +109,36 @@ $('#menu-toggle').click(function(){
 		});
 		$('#bosaPress').fadeIn();
 	}
-	$('#bbclogomini').delay(1000).fadeIn(1000, function(){
-		$('.togglemenu').fadeIn(1000, function(){
+	$('#bbclogomini').delay(1000).fadeIn(function(){
+		$('.togglemenu').fadeIn(function(){
 			$('#drinkmenu').fadeIn(2000);
 		});
 	});
 });
 
+
+// menu buttons 
+$("#munchiesbutton").click(function(){
+	$("#drinkmenu").fadeOut(function(){
+		$("#munchiesmenu").fadeIn(1500,function(){
+			$("#drinkbutton").removeClass("offbutton");
+			$("#munchiesbutton").addClass("offbutton");
+		});
+	});
+});
+
+$("#drinkbutton").click(function(){
+	$("#munchiesmenu").fadeOut(function(){
+		$("#drinkmenu").fadeIn(1500,function(){
+			$("#munchiesbutton").removeClass("offbutton");
+			$("#drinkbutton").addClass("offbutton");
+		});
+	});
+});
+
+
 $('#gallery-toggle').click(function(){
 	reset();
-
-
-
 	$('#bbclogo').animate({"margin-right": '+=850'}, 2000);	
 });
 

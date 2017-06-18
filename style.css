@@ -56,6 +56,12 @@ body{
 	background-color: #000; 
 }
 
+
+.offbutton{
+	background-color: #000;
+	pointer-events:none;
+}
+
 .togglemenu{
 	width: 20%;
 	top: 153px;
