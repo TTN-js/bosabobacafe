@@ -17,18 +17,16 @@ var reset = function(){
 	} else {
 
 		if($(".togglemenu").is(":visible")){
-			$(".togglemenu").fadeOut(function(){
-				if($("#drinkmenu").is(":visible")){
-					$("#drinkmenu").fadeOut();
-				} else {
-					if($("#munchiesmenu").is(":visible")){
-					$("#munchiesmenu").fadeOut();
-					$("#munchiesbutton").removeClass("offbutton");
-					$("#drinkbutton").addClass("offbutton");
-				}
-				}
-			});
+			$(".togglemenu").fadeOut();
 		}
+
+		if($("#drinkmenu").is(":visible")){
+			$("#drinkmenu").fadeOut();
+		} else if($("#munchiesmenu").is(":visible")){
+			$("#munchiesmenu").fadeOut();
+			$("#munchiesbutton").removeClass("roffbutton");
+			$("#drinkbutton").addClass("offbutton");
+		}		
 
 		if($('#bbclogomini').is(':visible')){
 			$('#bbclogomini').fadeOut();
