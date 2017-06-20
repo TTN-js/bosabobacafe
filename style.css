@@ -237,7 +237,7 @@ body{
 #about{
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
-	color: #D9D6CF;
+	color: #fff;
 	padding: 50px;
 	background-color: #AF6FC1;
 }
@@ -247,6 +247,7 @@ body{
 	text-align: justify;
 	font-size: 20px;
 	margin-top: 0px;
+	color: #fff;
 }
 
 .info{
@@ -319,31 +320,7 @@ footer {
 }
 
 /* media queries */
-/* 
-@media(max-width: 1385px){
-	#about{
-		padding: 100px;
-		margin-top: 0px !important;
-	}
 
-	#bbclogoabout{
-		width: 75%;
-		display:block;
-		margin:auto;
-		min-width: 300px;
-	} 
-
-	#hplbox {
-	    width: 80%;
-	    padding-left: 75px;
-	    margin: auto;
-	    min-width: 420px;
-	}
-
-	.info{
-		width: 45%;
-	}
-} */
 
 @media(max-width: 1385px){
 	#hplbox {
@@ -395,27 +372,6 @@ footer {
 		margin-left: 10%;
 	}
 }
-
-/* @media(max-width: 1040px){
-	#hplbox {
-	    padding-left: 0px;
-	}
-
-
-	.info{
-		width: 80%;
-		display: block;
-		margin: auto;
-		margin-top: 8%;
-	}
-
-	#about p {
-	    width: 85%;
-	    margin: auto;
-	    min-width: 300px;
-	}
-
-} */
 
 @media(max-width: 975px){
 	#mainNav li{
