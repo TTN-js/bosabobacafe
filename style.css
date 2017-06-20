@@ -32,8 +32,8 @@ body{
 	float: right;
 	margin-top: 170px;
 	margin-right: 62px;
-	width: 33%;
-	height: 70%; 
+	width: 473px;
+	height: 560px; 
 	display: none;
 }
 
@@ -235,7 +235,7 @@ body{
 
 /* about */
 #about{
-	min-height: 80vh;
+	min-height: 100vh;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	padding: 50px;
@@ -320,32 +320,6 @@ footer {
 	padding-bottom: 5px;
 }
 
-/* media queries */
-/* 
-@media(max-width: 1385px){
-	#about{
-		padding: 100px;
-		margin-top: 0px !important;
-	}
-
-	#bbclogoabout{
-		width: 75%;
-		display:block;
-		margin:auto;
-		min-width: 300px;
-	} 
-
-	#hplbox {
-	    width: 80%;
-	    padding-left: 75px;
-	    margin: auto;
-	    min-width: 420px;
-	}
-
-	.info{
-		width: 45%;
-	}
-} */
 
 @media(max-width: 1385px){
 	#hplbox {
@@ -353,6 +327,31 @@ footer {
 	}
 }
 
+@media(max-width: 1100px){
+
+	#bbclogomini{
+		display: none;
+	}
+
+	.togglemenu{
+		width: 40%;
+		top: 700px;
+		left: 50px;
+	}
+
+	.togglemenu img{
+		display: inline;
+	}
+
+	#drinkbutton, #munchiesbutton{
+	width: 40%;
+	}
+
+	#drinkmenu, #munchiesmenu{
+		height: 70%;
+		width: 90%;
+	}
+}
 
 @media(max-width: 1095px){
 	#about{
@@ -398,34 +397,35 @@ footer {
 	}
 }
 
-/* @media(max-width: 1040px){
-	#hplbox {
-	    padding-left: 0px;
-	}
-
-
-	.info{
-		width: 80%;
-		display: block;
-		margin: auto;
-		margin-top: 8%;
-	}
-
-	#about p {
-	    width: 85%;
-	    margin: auto;
-	    min-width: 300px;
-	}
-
-} */
-
 @media(max-width: 975px){
+
 	#mainNav li{
 		margin-left: 9%;
 	}
 }
 
+@media(max-width: 880px){
+	#drinkmenu, #munchiesmenu{
+		display: none;
+	}
+
+	.togglemenu{
+		width: 40%;
+		top: 700px;
+		left: 50px;
+	}
+
+	.togglemenu img{
+		display: inline;
+	}
+
+	#drinkbutton, #munchiesbutton{
+	width: 40%;
+	}
+}
+
 @media(max-width: 765px){
+
 	#mainNav li{
 		margin-left: 8%;
 	}
@@ -438,12 +438,18 @@ footer {
 }
 
 @media(max-width: 600px){
+	#bbclogo{
+		width: 85%;
+		margin-right: 8%;
+	}
+
 	#mainNav li{
 		margin-left: 6%;
 	}
 }
 
 @media(max-width: 550px){
+
 	#mainNav{
 		display: none;
 	}
