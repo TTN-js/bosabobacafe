@@ -235,6 +235,7 @@ body{
 
 /* about */
 #about{
+	min-height: 100vh;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
