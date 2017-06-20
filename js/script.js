@@ -53,7 +53,7 @@ var reset = function(){
 		}
 
 		if($('#bosaPress').is(':visible')){
-			$('#bosaPress').fadeOut(2000);
+			$('#bosaPress').fadeOut(1500);
 				$('#bosaPress')
 				  .queue(function (next) { 
 				    $('#bosaPress').css({"margin-right": ""}); 
@@ -182,8 +182,9 @@ $('#gallery-toggle').click(function(){
 $('#press-toggle').click(function(){
 	reset();
 	scrollDown();
-
-	$("#bosaPress").animate({"margin-right": '+=725'}, 2000);
+	$("#bosaPress").fadeIn(2000, function(){
+		$("#bosaPress").animate({"margin-right": '+=725'}, 2000);
+	});r
 });
 
 
