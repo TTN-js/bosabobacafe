@@ -235,12 +235,12 @@ body{
 
 /* about */
 #about{
-	min-height: 100vh;
+	min-height: 80vh;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
-	color: #D9D6CF;
 	padding: 50px;
 	background-color: #AF6FC1;
+	color: #fff;
 }
 
 #about p{
@@ -248,6 +248,7 @@ body{
 	text-align: justify;
 	font-size: 20px;
 	margin-top: 0px;
+	color: #fff;
 }
 
 .info{
