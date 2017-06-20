@@ -12,13 +12,15 @@ var reset = function(){
 
 	if(logoMargin === "62px" && $("#bbclogo").is(':visible')){
 
+		console.log('some reset');
+
 		if($('#bosaPress').css("marginRight") !== "-500px"){
 			$('#bbclogo').fadeOut(1000);
 			$('#bosaPress').fadeOut(1000);
 				$('#bosaPress')
 				  .queue(function (next) { 
 				    $('#bosaPress').css({"margin-right": ""}); 
-				    next(); g
+				    next(); 
 			});
 			$('#bbclogo').fadeIn(1500);		  
 			$('#bosaPress').fadeIn();
@@ -28,20 +30,26 @@ var reset = function(){
 
 	} else {
 
+		console.log('reset');
+
 		if($(".togglemenu").is(":visible")){
 			$(".togglemenu").fadeOut();
 		}
 
 		if($("#drinkmenu").is(":visible")){
-			$("#drinkmenu").fadeOut();
+			$('#drinkmenu').css({"display": "none"}); 
 		} else if($("#munchiesmenu").is(":visible")){
-			$("#munchiesmenu").fadeOut();
+			$('#munchiesmenu').css({"display": "none"}); 
 			$("#munchiesbutton").removeClass("roffbutton");
 			$("#drinkbutton").addClass("offbutton");
 		}		
 
 		if($('#bbclogomini').is(':visible')){
 			$('#bbclogomini').fadeOut();
+		}
+
+		if($('#instafeed').is(":visible")){
+			$('#instafeed').fadeOut(1000);
 		}
 
 		if($('#bosaPress').is(':visible')){
@@ -103,7 +111,7 @@ $("li").click(function() {
 
     setTimeout(function() {
            $("li").removeClass("disabled");
-       }, 2500);
+       }, 4000);
 });
 
 // toggles
@@ -117,18 +125,22 @@ $('#home-toggle').click(function(){
 $('#menu-toggle').click(function(){
 	scrollDown();
 	$('#bbclogo').fadeOut(1000);
-		if($('#bosaPress').is(':visible')){
-			$('#bosaPress').fadeOut(1500);
-			$('#bosaPress')
-			  .queue(function (next) { 
-			    $(bosaPress).css({"margin-right": ""}); 
-			    next(); 
+	if($('#instafeed').is(":visible")){
+		$('#instafeed').fadeOut(1000);
+	}
+
+	if($('#bosaPress').is(':visible')){
+		$('#bosaPress').fadeOut(1500);
+		$('#bosaPress')
+		  .queue(function (next) { 
+		    $(bosaPress).css({"margin-right": ""}); 
+		    next(); 
 		});
 		$('#bosaPress').fadeIn();
 	}
 	$('#bbclogomini').delay(1000).fadeIn(function(){
 		$('.togglemenu').fadeIn(function(){
-			$('#drinkmenu').fadeIn(2500);
+			$('#drinkmenu').fadeIn(2000);
 		});
 	});
 });
@@ -158,16 +170,33 @@ $("#drinkbutton").click(function(){
 $('#gallery-toggle').click(function(){
 	reset();
 	scrollDown();
-	$('#bbclogo').animate({"margin-right": '+=850'}, 1500);	
+
+	$('#bbclogo').fadeOut(1000, function(){
+		$('#instafeed').fadeIn(1000);
+		$('#bbclogo').animate({"margin-right": '-=25'})
+		$('#bbclogo').fadeIn(1000);
+	});
 });
 
 $('#press-toggle').click(function(){
 	reset();
 	scrollDown();
 
-	$("#bosaPress").animate({"margin-right": '+=725'}, 1500);
+	$("#bosaPress").animate({"margin-right": '+=725'}, 2000);
 });
 
 
+// instafeed.js
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: '5015620322',
+    clientId: '1f044d7ba0df46ceb8d8a379f7ce4955',
+    accessToken: '5015620322.1f044d7.8b802798eb8545f08e0cf73aa36fd37d',
+    resolution: 'standard_resolution',
+    template: '<a class="animation" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 100,
+    links: false
+  });
 
-    
+userFeed.run();
