@@ -12,25 +12,21 @@ var reset = function(){
 
 	if(logoMargin === "62px" && $("#bbclogo").is(':visible')){
 
-		console.log('noreset');
-
 		if($('#bosaPress').css("marginRight") !== "-500px"){
 			$('#bbclogo').fadeOut(1000);
 			$('#bosaPress').fadeOut(1000);
 				$('#bosaPress')
 				  .queue(function (next) { 
 				    $('#bosaPress').css({"margin-right": ""}); 
-				    next(); 
+				    next(); g
 			});
-			$('#bbclogo').fadeIn(1000);		  
+			$('#bbclogo').fadeIn(1500);		  
 			$('#bosaPress').fadeIn();
 		}
 
 		return;
 
 	} else {
-
-		console.log("reset");
 
 		if($(".togglemenu").is(":visible")){
 			$(".togglemenu").fadeOut();
@@ -67,7 +63,7 @@ var reset = function(){
 		    next(); 
 		});
 
-		$('#bbclogo').fadeIn();
+		$('#bbclogo').fadeIn(1500);
 	}
 }
 
