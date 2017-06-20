@@ -197,6 +197,7 @@ body{
 	font-family: 'Dosis', sans-serif;
 	font-size: 23px;
 	margin-top: 0px;
+	padding: 0px;
 }
 
 #mainNav li{
@@ -239,7 +240,6 @@ body{
 	color: #D9D6CF;
 	padding: 50px;
 	background-color: #AF6FC1;
-	/* height: 580px; */
 }
 
 #about p{
@@ -255,6 +255,11 @@ body{
 	width: 30%;
 	margin-top: 40px;
 	margin-right: 40px;
+}
+
+.address{
+	font-size: 14px !important; 
+	margin-top: 5px !important;
 }
 
 
@@ -314,5 +319,130 @@ footer {
 }
 
 /* media queries */
+/* 
+@media(max-width: 1385px){
+	#about{
+		padding: 100px;
+		margin-top: 0px !important;
+	}
 
-/* @media(max-width: 1300px){} */
+	#bbclogoabout{
+		width: 75%;
+		display:block;
+		margin:auto;
+		min-width: 300px;
+	} 
+
+	#hplbox {
+	    width: 80%;
+	    padding-left: 75px;
+	    margin: auto;
+	    min-width: 420px;
+	}
+
+	.info{
+		width: 45%;
+	}
+} */
+
+@media(max-width: 1385px){
+	#hplbox {
+	   padding-left: 0px;
+	}
+}
+
+
+@media(max-width: 1095px){
+	#about{
+		padding: 0px;
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+
+	.info{
+		display: block;
+		width: 35%;
+		margin-right: 0px;
+		margin: auto;
+		min-width: 290px; 
+		margin-top: 20px;
+	}
+
+	.aboutwords, #hplbox{
+		padding-top: 15px;
+		border-top: solid 2px #CDC3B7;
+	}
+
+	.hpl{
+		margin-right: 18px;
+	}
+
+	.address{
+		font-size: 11px !important;
+		margin-top: 10px !important;
+	}
+
+}
+
+@media(max-width: 1270px){
+	#mainNav li{
+		margin-left: 11%;
+	}
+}
+
+@media(max-width: 1030px){
+	#mainNav li{
+		margin-left: 10%;
+	}
+}
+
+/* @media(max-width: 1040px){
+	#hplbox {
+	    padding-left: 0px;
+	}
+
+
+	.info{
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 8%;
+	}
+
+	#about p {
+	    width: 85%;
+	    margin: auto;
+	    min-width: 300px;
+	}
+
+} */
+
+@media(max-width: 975px){
+	#mainNav li{
+		margin-left: 9%;
+	}
+}
+
+@media(max-width: 765px){
+	#mainNav li{
+		margin-left: 8%;
+	}
+}
+
+@media(max-width: 680px){
+	#mainNav li{
+		margin-left: 7%;
+	}
+}
+
+@media(max-width: 600px){
+	#mainNav li{
+		margin-left: 6%;
+	}
+}
+
+@media(max-width: 550px){
+	#mainNav{
+		display: none;
+	}
+}
