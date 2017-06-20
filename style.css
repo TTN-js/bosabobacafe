@@ -238,7 +238,7 @@ body{
 	color: #D9D6CF;
 	padding: 50px;
 	background-color: #AF6FC1;
-	height: 580px;
+	/* height: 580px; */
 }
 
 #about p{
@@ -311,3 +311,7 @@ footer {
 	margin-top: 5px;
 	padding-bottom: 5px;
 }
+
+/* media queries */
+
+/* @media(max-width: 1300px){} */

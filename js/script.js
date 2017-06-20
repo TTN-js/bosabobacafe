@@ -10,7 +10,7 @@ $(document).ready(function(){
 var reset = function(){
 	var logoMargin = $("#bbclogo").css("marginRight");
 
-	if(logoMargin === "62px" && $("#bbclogo").is(':visible')){
+	if(logoMargin === "3.875em" && $("#bbclogo").is(':visible')){
 
 		console.log('some reset');
 
@@ -81,7 +81,6 @@ var scrollDown = function(){
 	}
 }
 
-
 // reset on refresh
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
@@ -114,7 +113,9 @@ $("li").click(function() {
        }, 4000);
 });
 
-// toggles
+
+
+// onclick toggles
 $('#home-toggle').click(function(){
 	reset();
 	scrollDown();
