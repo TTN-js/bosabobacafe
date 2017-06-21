@@ -404,23 +404,20 @@ footer {
 	}
 }
 
-@media(max-width: 880px){
+@media(max-width: 850px){
 	#drinkmenu, #munchiesmenu{
 		display: none;
 	}
 
 	.togglemenu{
-		width: 40%;
-		top: 700px;
-		left: 50px;
-	}
-
-	.togglemenu img{
-		display: inline;
+		width: 80%;
+		top: 20%;
+		left: 10%;
 	}
 
 	#drinkbutton, #munchiesbutton{
-	width: 40%;
+	width: 100%;
+	margin-top:25px; 
 	}
 }
 
@@ -435,6 +432,11 @@ footer {
 	#mainNav li{
 		margin-left: 7%;
 	}
+
+	.togglemenu{
+		top: 40%;
+	}
+
 }
 
 @media(max-width: 600px){

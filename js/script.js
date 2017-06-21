@@ -113,7 +113,7 @@ $("li").click(function() {
        }, 4000);
 });
 
-if ($(window).width() < 1095){
+if ($(window).width() < 1095 && $(window).width() > 850){
 	$('#menu-toggle').click(function(){
 		scrollDown();
 		$('#bbclogo').fadeOut(1000);
@@ -134,13 +134,59 @@ if ($(window).width() < 1095){
 		$('.togglemenu').fadeIn(function(){
 			$('#drinkmenu').fadeIn(2000);
 		});
-
-		// $('#bbclogomini').delay(1000).fadeIn(function(){
-		// 	$('.togglemenu').fadeIn(function(){
-		// 		$('#drinkmenu').fadeIn(2000);
-		// 	});
-		// });
 	});
+
+	// menu buttons 
+	$("#munchiesbutton").click(function(){
+		$("#munchiesbutton").addClass("offbutton");
+		$("#drinkmenu").fadeOut(function(){
+			$("#munchiesmenu").fadeIn(1500,function(){
+				$("#drinkbutton").removeClass("offbutton");
+				
+			});
+		});
+	});
+
+	$("#drinkbutton").click(function(){
+		$("#drinkbutton").addClass("offbutton");
+		$("#munchiesmenu").fadeOut(function(){
+			$("#drinkmenu").fadeIn(1000,function(){
+				$("#munchiesbutton").removeClass("offbutton");		
+			});
+		});
+	});
+
+} else if($(window).width() < 850){
+	$('#menu-toggle').click(function(){
+		scrollDown();
+		$('#bbclogo').fadeOut(1000);
+		if($('#instafeed').is(":visible")){
+			$('#instafeed').fadeOut(1000);
+		}
+
+		if($('#bosaPress').is(':visible')){
+			$('#bosaPress').fadeOut(1500);
+			$('#bosaPress')
+			  .queue(function (next) { 
+			    $(bosaPress).css({"margin-right": ""}); 
+			    next(); 
+			});
+			$('#bosaPress').fadeIn();
+		}
+		$('.togglemenu').fadeIn();
+	});
+
+	// menu buttons 
+	$("#drinkbutton").removeClass("offbutton");
+
+	$("#munchiesbutton").click(function(){
+		window.open("images/bbcMunchiesMenu.png");
+	})
+
+	$("#drinkbutton").click(function(){
+		window.open("images/bbcDrinkMenu.png");
+	})
+
 } else {
 
 	$('#menu-toggle').click(function(){
@@ -185,6 +231,25 @@ if ($(window).width() < 1095){
 		});r
 	});
 
+	// menu buttons 
+	$("#munchiesbutton").click(function(){
+		$("#munchiesbutton").addClass("offbutton");
+		$("#drinkmenu").fadeOut(function(){
+			$("#munchiesmenu").fadeIn(1500,function(){
+				$("#drinkbutton").removeClass("offbutton");
+				
+			});
+		});
+	});
+
+	$("#drinkbutton").click(function(){
+		$("#drinkbutton").addClass("offbutton");
+		$("#munchiesmenu").fadeOut(function(){
+			$("#drinkmenu").fadeIn(1000,function(){
+				$("#munchiesbutton").removeClass("offbutton");		
+			});
+		});
+	});
 }
 
 // onclick toggles
@@ -194,27 +259,6 @@ $('#home-toggle').click(function(){
     $("html, body").animate({scrollTop:$('#about').offset().top - 40}, 1500);
   
 });
-
-// menu buttons 
-$("#munchiesbutton").click(function(){
-	$("#munchiesbutton").addClass("offbutton");
-	$("#drinkmenu").fadeOut(function(){
-		$("#munchiesmenu").fadeIn(1500,function(){
-			$("#drinkbutton").removeClass("offbutton");
-			
-		});
-	});
-});
-
-$("#drinkbutton").click(function(){
-	$("#drinkbutton").addClass("offbutton");
-	$("#munchiesmenu").fadeOut(function(){
-		$("#drinkmenu").fadeIn(1000,function(){
-			$("#munchiesbutton").removeClass("offbutton");		
-		});
-	});
-});
-
 
 
 // instafeed.js
