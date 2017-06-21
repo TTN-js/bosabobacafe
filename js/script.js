@@ -89,12 +89,12 @@ $(window).on('beforeunload', function() {
 // sticky nav
 var nav = $("#nav");
     scrolleNav = "navScrolled";
-    heroImg = $('#heroImg').height() - 95; 
+    heroImg = $('#heroImg').height() - 100; 
 
 $(window).scroll(function() {
   if($(this).scrollTop() > heroImg) {
     nav.addClass(scrolleNav);
-    $("#about").css({"margin-top": "80px"});
+    $("#about").css({"margin-top": "90px"});
   } else {
     nav.removeClass(scrolleNav);
     $("#about").css({"margin-top": ""});
