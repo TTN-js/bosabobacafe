@@ -233,7 +233,7 @@ body{
 
 /* about */
 #about{
-	min-height: 100vh;
+	min-height: 90vh;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	padding: 50px;
