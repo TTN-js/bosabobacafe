@@ -163,6 +163,14 @@ $('#press-toggle').click(function(){
 	
 });
 
+// order online
+$('#order-on').click(function(){
+	setTimeout(function() {
+		location.reload();
+	}, 1000);
+});
+
+
 // instafeed.js
 var userFeed = new Instafeed({
     get: 'user',
