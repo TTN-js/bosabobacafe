@@ -19,6 +19,7 @@ body{
 #hero-img{
 	margin-top: -100px;
     height: 100vh;
+    min-height: 100%;
     width: 100%;
     background: url('images/hero.png');
     background-size: cover;
@@ -26,12 +27,13 @@ body{
 
 #container-top{
 	height: 100%;
+	min-height: 100%;
 	padding: 75px;
 	padding-top: 150px;
 }
 
 /* home */
-#bbc-logo{
+#bbc-logo, #bbc-logo-press{
 	float: right;
 	width: 450px;
 	height: 570px; 
@@ -53,7 +55,7 @@ body{
 
 #drink-menu, #munchies-menu{
 	height: 588px;
-	width: 1095px;
+	width: 84%;
 	display: none;
 	margin-left: 15px;
 }
@@ -214,6 +216,7 @@ body{
 /* bottom */
 #container-bottom{
 	height: 100%;
+	min-height: 100%;
 	padding: 50px;
 }
 
@@ -314,6 +317,150 @@ footer {
 
 /* media queries */
 
+@media(max-width: 1400px){
+	#bosa-press{
+		margin-right: 12%;
+	}
+}
+
+@media(max-width: 1340px){
+	#drink-menu, #munchies-menu{
+		width: 83%;
+	}
+
+	#bosa-press{
+		margin-right: 9%;
+	}
+}
+
+@media(max-width: 1325px){
+	#bosa-press{
+		margin-right: 8%;
+	}
+}
+
+@media(max-width: 1270px){
+	#drink-menu, #munchies-menu{
+		width: 82%;
+	}
+
+	#bosa-press {
+	    margin-right: 7%;
+	}
+}
+
+@media(max-width: 1270px){
+	#bosa-press {
+	    margin-right: 4%;
+	}
+}
+
+@media(max-width: 1210px){
+	#drink-menu, #munchies-menu{
+		width: 81%;
+	}
+}
+
+
+@media(max-width: 1195px){
+	#bosa-press {
+	    margin-right: 3%;
+	    margin-left: 90px;
+	}
+}
+
+@media(max-width: 1175px){
+	#bosa-press {
+	    margin-right: 2%;
+	    margin-left: 80px;
+	}
+}
+
+@media(max-width: 1150px){
+	#drink-menu, #munchies-menu{
+		width: 80%;
+	}
+
+	#bosa-press {
+	    margin-right: 1%;
+	    margin-left: 60px;
+	}
+}
+
+@media(max-width: 1125px){
+	#bosa-press {
+	    margin-right: 2%;
+	    margin-left: 30px;
+	}
+}
+
+@media(max-width: 1100px){
+	#drink-menu, #munchies-menu{
+		width: 79%;
+	}
+
+	#bosa-press, #bbc-logo-press{
+	   width: 425px;
+	}
+
+}
+
+@media(max-width: 1060px){
+	#drink-menu, #munchies-menu{
+		width: 78%;
+	}
+
+	#bosa-press, #bbc-logo-press{
+		width: 400px;
+	}
+}
+
+
+@media(max-width: 1030px){
+	#bosa-press{
+		margin-right: 0;
+	}
+}
+
+@media(max-width: 1015px){
+	#drink-menu, #munchies-menu{
+		width: 77%;
+	}
+}
+
+@media(max-width: 1000px){
+	#main-nav{
+		display: none;
+	}
+
+	#nav{
+		height: 20px;
+	}
+
+	#bbc-logo{
+		display: block !important;
+		margin: auto;
+		float: none;
+		width: 350px;
+		height: 450px;
+	}
+
+	#hpl-box{
+		display: none;
+	}
+
+	.info{
+		width: 45%;
+		/* margin-top: 10px; */
+		margin-right: 20px;
+	}
+
+	/* #drop-nav{
+		display: block;
+	} */
+
+}
+
 
 /* @media(max-width: 1385px){
 	#hpl-box {
@@ -395,4 +542,3 @@ footer {
 		display: none;
 	}
 }
- */
