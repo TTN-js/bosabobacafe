@@ -595,7 +595,7 @@ footer {
 }
 
 /* height */
-@media( max-height: 825px ){
+@media( max-height: 1000px ){
     #hero-img{
     	/* margin-top: -100px; */
         height: 50vh;
