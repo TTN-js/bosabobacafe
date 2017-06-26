@@ -59,9 +59,39 @@ var reset = function(){
 
 	if($('#bosa-press').is(':visible')){
 		$('#bosa-press').fadeOut(1000);
+		$('#bbc-logo-press').fadeOut(1000);
 	}
 	
 }
+
+// resize reset
+$(window).resize(function() {
+	if ($(window).width() < 1000) {
+
+    	if($(".toggle-menu").is(":visible")){
+    			$(".toggle-menu").hide();
+		}
+
+		if($("#drink-menu").is(":visible")){
+			$('#drink-menu').hide();
+		} else if($("#munchies-menu").is(":visible")){
+			$('#munchies-menu').hide();
+			$("#munchies-button").removeClass("roffbutton");
+			$("#drink-button").addClass("offbutton");
+		}		
+
+		if($('#instafeed').is(":visible")){
+			$('#instafeed').hide();
+		}
+
+		if($('#bosa-press').is(':visible')){
+			$('#bosa-press').hide();
+			$('#bbc-logo-press').hide();
+		}
+
+		$('#bbc-logo').fadeIn(1000);
+	}
+});
 
 var scrollDown = function(){
 	$("html, body").animate({ scrollTop: 0 }, 1500);
@@ -95,7 +125,8 @@ $('#menu-toggle').click(function(){
 
 	// press
 	if($('#bosa-press').is(':visible')){
-		$('#bosa-press').fadeOut(1000);
+		$('#bosa-press').fadeOut(1000)
+		$('#bbc-logo-press').fadeOut(1000);
 	}
 
 	// mini logo
@@ -133,6 +164,8 @@ $('#gallery-toggle').click(function(){
 	reset();
 	scrollDown();
 
+
+
 	if($('#bbc-logo').is(":visible")){
 		$('#bbc-logo').fadeOut(1000, function(){
 			$('#instafeed').fadeIn(1000);
@@ -151,17 +184,24 @@ $('#press-toggle').click(function(){
 	reset();
 	scrollDown();
 
+
 	if($('#bbc-logo').is(":visible")){
 		$('#bbc-logo').fadeOut(1000);
 	}
 
 	setTimeout(function() {
 		$("#bosa-press").fadeIn(1000);
-	    $('#bbc-logo').fadeIn(1000);
-	}, 1000);
-
-	
+	    $('#bbc-logo-press').fadeIn(1000);
+	}, 2000);
 });
+
+// order online
+$('#order-on').click(function(){
+	setTimeout(function() {
+		location.reload();
+	}, 1000);
+});
+
 
 // instafeed.js
 var userFeed = new Instafeed({
