@@ -19,7 +19,7 @@ body{
 #hero-img{
 	margin-top: -100px;
     height: 100%;
-    min-height: 80vh;
+    min-height: 570px;
     width: 100%;
     background: url('images/hero.png');
     background-size: cover;
@@ -215,8 +215,8 @@ body{
 
 /* bottom */
 #container-bottom{
-	height: 100%;
-	min-height: 80vh;
+	/* height: 100%; */
+	min-height: 100vh;
 	padding: 50px;
 }
 
@@ -493,7 +493,6 @@ footer {
 	/* #drop-nav{r
 		display: block;
 	} */
-
 }
 
 @media(max-width: 955px){
@@ -507,7 +506,6 @@ footer {
 	}
 
 }
-
 
 @media(max-width: 905px){
 	.info{
@@ -527,12 +525,6 @@ footer {
 		margin-left: 0px;
 		text-align: center !important;
 	}
-
-	/* #info-container {
-	    margin-top: 0px;
-	} */
-
-
 }
 
 @media(max-width: 900px){
@@ -600,4 +592,35 @@ footer {
 	#container-top, #container-bottom{
 		padding-left: 18px;
 	}
+}
+
+/* height */
+@media( max-height: 825px ){
+    #hero-img{
+    	/* margin-top: -100px; */
+        height: 90vh;
+        /* min-height: 80vh; */
+        /* width: 100%; */
+        /* background: url('images/hero.png'); */
+        /* background-size: cover;
+        background-position: center center; */
+    }
+
+    #bbc-logo{
+    	width: 325px;
+    	height: 400px;
+    }
+
+    #container-top{
+    	height: 90vh;
+    	/* min-height: 80vh; */
+    	/* padding: 75px; */
+    	/* padding-top: 150px; */
+    }
+
+    /* #container-bottom{
+    	height: 90vh;
+    	min-height: 80vh;
+    	padding: 50px;
+    } */
 }
