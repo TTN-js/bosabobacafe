@@ -203,8 +203,6 @@ $('#order-on').click(function(){
 });
 
 
-
-
 // instafeed.js
 var userFeed = new Instafeed({
     get: 'user',
