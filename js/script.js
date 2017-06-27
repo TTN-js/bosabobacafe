@@ -90,6 +90,7 @@ $(window).resize(function() {
 		}
 
 		$('#bbc-logo').fadeIn(1000);
+
 	}
 });
 
@@ -202,6 +203,12 @@ $('#order-on').click(function(){
 	}, 1000);
 });
 
+
+// burger nav 
+$("#nav-burger").click(function(){
+	console.log('click');
+	$("#drop-nav").slideToggle('slow');
+})
 
 // instafeed.js
 var userFeed = new Instafeed({

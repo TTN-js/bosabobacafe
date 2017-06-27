@@ -58,6 +58,24 @@ body{
 	float: right;
 }
 
+#drop-nav{
+	display: none;
+	z-index: 150;
+	text-align: center;
+	background-color: #63676A;
+}
+
+#drop-down-nav{
+	margin: 0;
+	padding: 20px;
+	font-size:1.5em;
+}
+
+#drop-down-nav li{
+	list-style-type: none;
+}
+
+
 /* menu */
 #bbc-logo-mini{
 	width: 175px;
@@ -478,12 +496,12 @@ footer {
 }
 
 @media(max-width: 1000px){
-	/* #main-nav{
+	#main-nav{
 		display: none;
-	} */
+	}
 
 	#nav{
-		display: none;
+		height: 10px;
 	}	
 
 	footer{
@@ -511,12 +529,12 @@ footer {
 		margin-left: 25px;
 	}
 
-	/* #drop-nav{
-		display: block;
-	} */
-
 	#about{
 		display: none;
+	}
+
+	#mobile-info-container{
+		display: block;
 	}
 
 }
