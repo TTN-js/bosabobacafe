@@ -13,22 +13,21 @@ body{
 	box-sizing: border-box;
 	margin: auto 0;
 	background-color: #AF6FC1;
+	min-height: 800px; 
 }
 
 /* top */
 #hero-img{
 	margin-top: -100px;
-    /* height: 100vh; */
-    /* min-height: 100vh; */
     width: 100%;
     background: url('images/hero.png');
     background-size: cover;
     background-position: center center;
+    min-height: 590px;
 }
 
 #container-top{
 	height: 70vh;
-	/* min-height: 100%; */
 	padding: 75px;
 	padding-top: 150px;
 }
@@ -44,6 +43,9 @@ body{
 #mobile-info-container{
 	margin: auto 0;
 	display: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #CDC3B7;
+	margin-top: 30px;
 }
 
 #mobile-adress, #mobile-phone{
@@ -51,11 +53,12 @@ body{
 }
 
 #mobile-social{
-	float: left;
+	text-align: center;
+	margin-top: 25px;
 }
 
-#nav-burger{
-	float: right;
+#mobile-social a{
+	    margin: 40px;
 }
 
 #drop-nav{
@@ -67,12 +70,14 @@ body{
 
 #drop-down-nav{
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
+	font-family: 'Dosis', sans-serif;
 	font-size:1.5em;
 }
 
 #drop-down-nav li{
 	list-style-type: none;
+	margin: 5px;
 }
 
 
@@ -250,8 +255,6 @@ body{
 
 /* bottom */
 #container-bottom{
-	/* height: 100%; */
-	/* min-height: 100%; */
 	padding: 50px;
 }
 
@@ -262,7 +265,6 @@ body{
 
 /* about */
 #about{
-	/* min-height: 90vh; */
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	background-color: #AF6FC1;
@@ -284,7 +286,6 @@ body{
 	display: inline-block;
 	vertical-align:top;
 	width: 30%;
-	/* margin-top: 40px; */
 	margin-right: 20px;
 	margin-left: 20px;
 
@@ -400,9 +401,6 @@ footer {
 		margin-left: 40px;
 	}
 
-	/* #hpl-box {
-	    margin-top: 50px;
-	} */
 }
 
 @media(max-width: 1240px){
@@ -501,11 +499,11 @@ footer {
 	}
 
 	#nav{
-		height: 10px;
+		height: auto;
 	}	
 
-	footer{
-		display: none;
+	#drop-nav{
+		display: block;
 	}
 
 	#bbc-logo{
@@ -539,143 +537,254 @@ footer {
 
 }
 
-/* @media(max-width: 955px){
-	#bbc-logo-about{
-	    width: 375px;
-	    margin-left: 0px;
+@media(max-width: 1000px) and (max-height:955px){
+	#mobile-info-container{
+		margin-top: 20px;
 	}
 
-	.about-words {
-		width: 400px;
+}
+
+
+@media(max-width: 1000px) and (min-height:930px){
+	#container-top{
+		padding: 50px;
+		padding-top: 150px;
 	}
 
-} */
+	#bbc-logo{
+		height: 400px;
+	}
+}
 
-
-/* @media(max-width: 905px){
-	.info{
-	    display: block;
-	    margin-left: 200px; 
+@media(max-width: 1000px) and (min-height:885px){
+	#container-top{
+		padding-top: 135px;
 	}
 
-	#bbc-logo-about{
-	    margin-left: 15px;
+	#bbc-logo{
+		height: 350px;
+		width: 300px;
 	}
 
-	.about-words {
-		margin-top: 50px;
+	#mobile-info-container{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 1000px) and (max-height:650px){
+	#bbc-logo{
+		height: 325px;
+		width: 250px;
 	}
 
-	#words{
-		margin-left: 0px;
-		text-align: center !important;
+	#mobile-info-container{
+		margin-top: 20px;
 	}
-	
-} */
+}
 
-/* @media(max-width: 900px){
-	#info-container {
-	    width: 400px;
-	    margin: auto;
+@media(max-width: 1000px) and (max-height:650px){
+	#mobile-adress, #mobile-phone{
+		font-size: 14px;
+	}
+	#mobile-social{
+		margin-top: 20px;
+	}
+
+	#drop-down-nav{
+		font-size: 1em;
+
+	}
+}
+
+@media(max-width: 500px){
+	#container-top{
+		padding: 150px 25px 70px 25px;
+	}
+
+	#mobile-social a{
+		margin: 30px;
+	}
+}
+
+/* ipad pro */
+@media only screen and (max-device-width: 1024px) and (min-device-height:1366px) and (orientation: portrait){
+	#container-top{
+		height: 40vh;
+	}
+}
+
+@media only screen  and (min-device-height: 1024px) and (min-device-width:1366px) and (orientation: landscape){
+	#container-top{
+		height: 55vh;
+	}
+}
+
+/* ipad */
+@media only screen  and  (device-width:768px) and (orientation: portrait){
+	#bbc-logo {
+	    width: 600px;
+	    height: 675px;
 	    margin-top: 40px;
 	}
 
-	.info{
-		margin: auto 0;
+	#mobile-info-container{
+		margin-top: 30px;
+		font-size: 1.7em;
 	}
 
-} */
-
-/* @media(max-width: 550px){
-	#info-container {
-	    width: auto;
-	}
-
-	#bbc-logo-about {
-	    margin-left: 0px;
-	}
-
-	.about-words {
-	    width: 370px;
-	}
-
-} */
-
-
-@media(max-width: 505px){
-	#container-top, #container-bottom{
-		padding-left: 20px;
-	}
-
-}
-
-@media(max-width: 425px){
-	#container-top, #container-bottom{
-		padding-left: 30px;
-	}
-
-	/* #bbc-logo-about{
-		width: 300px;
-	}
-
-	.about-words {
-		width: 300px;
-	}
-
-	#about p{
-		font-size: 18px;
-	} */
-
-	#bbc-logo{
-		width: 300px;
-		height: 400px;
-	}
-
-
-}
-
-@media(max-width: 350px){
-	#container-top, #container-bottom{
-		padding-left: 18px;
+	#drop-down-nav{
+		font-size: 2em;
 	}
 }
 
 
+/* iphone 6p */
+@media only screen and (device-width: 414px) and (orientation: portrait){
+	#container-top {
+	    height: 85vh;
+	}
 
-@media only screen  and (max-height: 1366px) and (max-width: 1024px) {
-    #container-top{
-    	height: 40vh;
-    }
+	#bbc-logo {
+		width: 700px;
+		height: 850px;
+	    margin-top: 235px;
+	}
+
+	#mobile-info-container {
+	    margin-top: 65px;
+	    font-size: 2.5em;
+
+	}
+
+	#mobile-social {
+	   font-size: 1.5em;
+	    margin-top: 40px;
+	}
+
+	#drop-down-nav {
+	    font-size: 2.5em;
+	}
 }
 
-/* @media only screen  and (max-height: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-    #container-top{
-    	height: 55vh;
-    }
+/* nexus 6p */
+@media only screen and (device-width: 412px) and (orientation: portrait){
+	#container-top {
+	    height: 85vh;
+	    padding-top: 60px;
+	}
+
+	#bbc-logo {
+		width: 700px;
+		height: 850px;
+	    margin-top: 130px;
+	}
+
+	#mobile-info-container {
+	    margin-top: 65px;
+	    font-size: 2.5em;
+
+	}
+
+	#mobile-social {
+	   font-size: 1.5em;
+	   margin-top: 70px;
+	}
+
+	#drop-down-nav {
+	    font-size: 3em;
+	}
 }
- */
+
+/* iphone 6 */
+@media only screen and (device-width: 375px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 133px;
+	}
+
+	#drop-down-nav {
+	    font-size: 3em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 2em;
+	}
+}
+
+/* galaxy s5 */
+@media only screen and (device-width: 360px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 125px;
+	}
+
+	#drop-down-nav {
+	    font-size: 3em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 2em;
+	}
+}
 
 
-@media  only screen  and (max-height: 1280px) and (max-width: 1000px) {
-    #container-top{
-    	height: 45vh;
-    }
+/* iphone 5 */
+@media only screen and (device-width: 320px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 125px;
+	}
+
+	#drop-down-nav {
+	    font-size: 3em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 2em;
+	}
 }
 
-@media  only screen  and (max-height: 1024px) and (max-width: 1000px) {
-    #container-top{
-    	height: 50vh;
-    }
-}
 
-@media  only screen  and (max-height: 768px) and (max-width: 1024px) {
-    #container-top{
-    	height: 72vh;
-    }
-}
 
-@media  only screen  and (max-height: 640px) and (max-width: 1000px) {
-    #container-top{
-    	height: 65vh;
-    }
-}

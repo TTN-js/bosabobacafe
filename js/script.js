@@ -23,15 +23,33 @@ $(window).scroll(function() {
 
 
 // active nav check
-$("li").click(function() {
-	$("li").addClass("disabled");
-    $(this).siblings().removeClass("selected");
-    $(this).addClass("selected");
+$(window).resize(function() {
+	if ($(window).width() > 1000) {
+		$("li").click(function() {
+			$("li").addClass("disabled");
+		    $(this).siblings().removeClass("selected");
+		    $(this).addClass("selected");
 
-    setTimeout(function() {
-        $("li").removeClass("disabled");
-    }, 3500);
+		    setTimeout(function() {
+		        $("li").removeClass("disabled");
+		    }, 3500);
+		});
+	}
 });
+
+
+if ($(window).width() > 1000) {
+	$("li").click(function() {
+		$("li").addClass("disabled");
+	    $(this).siblings().removeClass("selected");
+	    $(this).addClass("selected");
+
+	    setTimeout(function() {
+	        $("li").removeClass("disabled");
+	    }, 3500);
+	});
+}
+
 
 // logo fade in on ready
 $(document).ready(function(){
@@ -205,10 +223,10 @@ $('#order-on').click(function(){
 
 
 // burger nav 
-$("#nav-burger").click(function(){
-	console.log('click');
-	$("#drop-nav").slideToggle('slow');
-})
+// $("#nav-burger").click(function(){
+// 	console.log('click');
+// 	$("#drop-nav").slideToggle('slow');
+// })
 
 // instafeed.js
 var userFeed = new Instafeed({
