@@ -493,7 +493,17 @@ footer {
 	}
 }
 
+@media(min-width: 1000px){
+	#container-top{
+		min-height: 550px;
+	}
+}
+
 @media(max-width: 1000px){
+	#container-top{
+		min-height: 0px;
+	}	
+
 	#main-nav{
 		display: none;
 	}
@@ -633,7 +643,7 @@ footer {
 	}
 
 	#drop-down-nav{
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
 
@@ -662,7 +672,7 @@ footer {
 	}
 
 	#drop-down-nav {
-	    font-size: 2.5em;
+	    font-size: 3em;
 	}
 }
 
@@ -680,18 +690,22 @@ footer {
 	}
 
 	#mobile-info-container {
-	    margin-top: 65px;
+	    margin-top: 45px;
 	    font-size: 2.5em;
 
 	}
 
 	#mobile-social {
 	   font-size: 1.5em;
-	   margin-top: 70px;
+	   margin-top: 60px;
+	}
+
+	#mobile-social a {
+	    margin: 100px;
 	}
 
 	#drop-down-nav {
-	    font-size: 3em;
+	    font-size: 4em;
 	}
 }
 
