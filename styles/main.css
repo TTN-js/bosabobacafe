@@ -1,0 +1,103 @@
+@media(min-width: 1000px){
+	#container-top{
+		min-height: 550px;
+	}
+}
+
+@media(max-width: 1000px){
+	#container-top{
+		min-height: 0px;
+	}	
+
+	#main-nav{
+		display: none;
+	}
+
+	#nav{
+		height: auto;
+	}	
+
+	#drop-nav{
+		display: block;
+	}
+
+	#bbc-logo{
+		display: block !important;
+		margin: auto;
+		float: none;
+		width: 350px;
+		height: 450px;
+	}
+
+	#hpl-box{
+		display: none;
+	}
+
+	#info-container {
+	    padding-left: 0px;
+	}
+
+	.info{
+		width: 45%;
+		margin-left: 25px;
+	}
+
+	#about{
+		display: none;
+	}
+
+	#mobile-info-container{
+		display: block;
+	}
+
+}
+
+@media(max-width: 1100px){
+	#drink-menu, #munchies-menu{
+		width: 79%;
+	}
+
+	#bosa-press, #bbc-logo-press{
+	   width: 425px;
+	}
+	#info-container {
+	    padding-left: 35px;
+	}
+	.info{
+		width: 40%;
+	}
+
+}
+
+/* nexus 6p */
+@media only screen and (device-width: 412px) and (orientation: portrait){
+	#container-top {
+	    height: 85vh;
+	    padding-top: 60px;
+	}
+
+	#bbc-logo {
+		width: 700px;
+		height: 850px;
+	    margin-top: 130px;
+	}
+
+	#mobile-info-container {
+	    margin-top: 45px;
+	    font-size: 2.5em;
+
+	}
+
+	#mobile-social {
+	   font-size: 1.5em;
+	   margin-top: 60px;
+	}
+
+	#mobile-social a {
+	    margin: 100px;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+}
