@@ -1,37 +1,9 @@
-@media(min-width: 1000px){
-	#container-top{
-		min-height: 550px;
-	}
-}
+
 
 @media(max-width: 1000px){
 	#container-top{
 		min-height: 0px;
 	}	
-
-	#main-nav{
-		display: none;
-	}
-
-	#nav{
-		height: auto;
-	}	
-
-	#drop-nav{
-		display: block;
-	}
-
-	#bbc-logo{
-		display: block !important;
-		margin: auto;
-		float: none;
-		width: 350px;
-		height: 450px;
-	}
-
-	#hpl-box{
-		display: none;
-	}
 
 	#info-container {
 	    padding-left: 0px;
@@ -44,10 +16,6 @@
 
 	#about{
 		display: none;
-	}
-
-	#mobile-info-container{
-		display: block;
 	}
 
 }

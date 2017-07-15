@@ -22,41 +22,11 @@
 
 }
 
-
 @media(max-width: 1000px){
-	#main-nav{
-		display: none;
-	}
-
-	#nav{
-		height: auto;
-	}	
-
-	#drop-nav{
-		display: block;
-	}
-
-	#bbc-logo{
-		display: block !important;
-		margin: auto;
-		float: none;
-		width: 350px;
-		height: 450px;
-	}
-
-	#hpl-box{
-		display: none;
-	}
-
 	.info{
 		width: 45%;
 		margin-left: 35px;
 	}
-
-	#mobile-info-container{
-		display: block;
-	}
-
 }
 
 @media(min-width: 840px){
