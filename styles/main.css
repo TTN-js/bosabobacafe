@@ -1,5 +1,3 @@
-
-
 @media(max-width: 1000px){
 	#container-top{
 		min-height: 0px;
@@ -38,7 +36,7 @@
 }
 
 /* nexus 6p */
-@media only screen and (device-width: 412px) and (orientation: portrait){
+/* @media only screen and (device-width: 412px) and (orientation: portrait){
 	#container-top {
 	    height: 85vh;
 	    padding-top: 60px;
@@ -68,4 +66,4 @@
 	#drop-down-nav {
 	    font-size: 4em;
 	}
-}
+} */
