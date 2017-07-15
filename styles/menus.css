@@ -96,6 +96,96 @@
 }
 
 
+/* ipad pro */
+@media only screen and (max-device-width: 1024px) and (min-device-height:1366px) and (orientation: portrait){
+	#container-top{
+		height: 40vh;
+	}
+}
+
+@media only screen  and (min-device-height: 1024px) and (min-device-width:1366px) and (orientation: landscape){
+	#container-top{
+		height: 55vh;
+	}
+}
+
+/* ipad */
+@media only screen  and  (device-width:768px) and (orientation: portrait){
+	#bbc-logo {
+	    width: 600px;
+	    height: 675px;
+	    margin-top: 40px;
+	}
+
+	#mobile-info-container{
+		margin-top: 30px;
+		font-size: 1.7em;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+}
+
+
+/* iphone 6p */
+@media only screen and (device-width: 414px) and (orientation: portrait){
+	#container-top {
+	    height: 85vh;
+	}
+
+	#bbc-logo {
+		width: 700px;
+		height: 850px;
+	    margin-top: 235px;
+	}
+
+	#mobile-info-container {
+	    margin-top: 65px;
+	    font-size: 2.5em;
+
+	}
+
+	#mobile-social {
+	   font-size: 1.5em;
+	    margin-top: 40px;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+}
+
+/* iphone 6 */
+@media only screen and (device-width: 375px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 30px;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 3em;
+	}
+}
+
 /* nexus 6p */
 @media only screen and (device-width: 412px) and (orientation: portrait){
 	#container-top {
@@ -106,7 +196,7 @@
 	#bbc-logo {
 		width: 700px;
 		height: 850px;
-	    margin-top: 130px;
+		margin-top: 170px;
 	}
 
 	#mobile-info-container {
@@ -125,3 +215,63 @@
 	}
 }
 
+/* galaxy s5 */
+@media only screen and (device-width: 360px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 40px;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 3em;
+	}
+}
+
+
+/* iphone 5 */
+@media only screen and (device-width: 320px) and (orientation: portrait){
+	#container-top {
+	    padding-top: 200px;
+	}
+
+	#copyright{
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	#bbc-logo {
+	    height: 800px;
+	    width: 675px;
+	    margin-top: 45px;
+	}
+
+	#drop-down-nav {
+	    font-size: 4em;
+	}
+
+	#mobile-info-container {
+	    margin-top: 50px;
+	}
+
+	#mobile-info-container {
+	    font-size: 3em;
+	}
+}
