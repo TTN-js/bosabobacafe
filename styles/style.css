@@ -469,50 +469,13 @@ footer {
 	}
 }
 
-@media(min-width: 1000px){
-	#container-top{
-		min-height: 550px;
-	}
-}
-
-@media(max-width: 1000px){
-	#main-nav{
-		display: none;
-	}
-
-	#nav{
-		height: auto;
-	}	
-
-	#drop-nav{
-		display: block;
-	}
-
-	#bbc-logo{
-		display: block !important;
-		margin: auto;
-		float: none;
-		width: 350px;
-		height: 450px;
-	}
-
-	#hpl-box{
-		display: none;
-	}
-
-	
-	#mobile-info-container{
-		display: block;
-	}
-}
-
-
 @media(max-width: 1000px) and (max-height:955px){
 	#mobile-info-container{
 		margin-top: 20px;
 	}
 
 }
+
 
 @media(max-width: 1000px) and (min-height:930px){
 	#container-top{
@@ -664,7 +627,6 @@ footer {
 	    font-size: 2em;
 	}
 }
-
 
 /* galaxy s5 */
 @media only screen and (device-width: 360px) and (orientation: portrait){
