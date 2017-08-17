@@ -183,8 +183,6 @@ $('#gallery-toggle').click(function(){
 	reset();
 	scrollDown();
 
-
-
 	if($('#bbc-logo').is(":visible")){
 		$('#bbc-logo').fadeOut(1000, function(){
 			$('#instafeed').fadeIn(1000);
@@ -220,13 +218,6 @@ $('#order-on').click(function(){
 		location.reload();
 	}, 1000);
 });
-
-
-// burger nav 
-// $("#nav-burger").click(function(){
-// 	console.log('click');
-// 	$("#drop-nav").slideToggle('slow');
-// })
 
 // instafeed.js
 var userFeed = new Instafeed({

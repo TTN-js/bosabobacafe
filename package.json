@@ -1,0 +1,22 @@
+{
+  "name": "bosabobacafe.site",
+  "version": "1.0.0",
+  "description": "bbc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTN-js/bosabobacafe.git"
+  },
+  "author": "Thomas Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TTN-js/bosabobacafe/issues"
+  },
+  "homepage": "https://github.com/TTN-js/bosabobacafe#readme",
+  "dependencies": {
+    "node": "^8.3.0"
+  }
+}
