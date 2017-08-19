@@ -14,8 +14,19 @@
 
 	<link rel="icon" type="image/png" href="images/bbcpanda.png">
 
+	<!-- menu object -->
+	<script type="text/javascript" src="data/menu.js"></script>
+
+	<script type="text/javascript">
+		function loadMenu(data) {
+		    var menuItem = JSON.parse(data);
+		    console.log(menuItem);
+		 }		
+	</script>
+
 </head>
-<body>
+<!-- loading menu data -->
+<body onload="loadMenu(data)">
 
 	<div id="hero-img">
 		<div id="container-top">			
