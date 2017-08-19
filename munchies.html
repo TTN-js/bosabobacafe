@@ -14,8 +14,21 @@
 
 	<link rel="icon" type="image/png" href="images/bbcpanda.png">
 
+	<!-- menu object -->
+	<script type="text/javascript" src="data/menu.js"></script>
+
+	<script type="text/javascript">
+		function loadMenu(data) {
+			// console.log(data);
+		    var menuItem = JSON.parse(data);
+		    console.log(menuItem);
+		    // console.log(menuItem[0].red); // Will log "is my fave color"
+		 }		
+	</script>
+
 </head>
-<body>
+<!-- loading menu data -->
+<body onload="loadMenu(data)">
 
 	<div id="hero-img">
 		<div id="container-top">			
